@@ -1,4 +1,4 @@
-from src.clients.openai_client import openai
+from src.clients.openai_client import get_openai_client
 
 
 def ask_openai_with_image(
@@ -37,7 +37,8 @@ def ask_openai_with_image(
             },
         )
 
-    completion = openai.beta.chat.completions.parse(
+    client = get_openai_client()
+    completion = client.beta.chat.completions.parse(
         model="gpt-4o-2024-08-06",
         messages=messages,
         response_format=response_format,
