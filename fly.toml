@@ -1,4 +1,4 @@
-app = 'receipts-api-yych42'
+app = 'receipts-api-prod'
 primary_region = 'sjc'
 
 [build]

@@ -14,7 +14,7 @@ from pathlib import Path
 import requests
 
 # Configuration
-API_URL = "https://receipts-api-yych42.fly.dev/image/extract/receipt"
+API_URL = "https://receipts-api-prod.fly.dev/image/extract/receipt"
 TEST_DIR = Path(__file__).parent
 RECEIPT_IMAGE = TEST_DIR / "receipt.png"
 EXPECTED_RECEIPT = TEST_DIR / "expected_receipt.json"
