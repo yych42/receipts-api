@@ -5,6 +5,4 @@ openai>=1.40.6
 requests==2.31.0
 Pillow==10.3.0
 boto3==1.34.119
-upstash-ratelimit==1.1.0
-upstash-redis==1.1.0
 python-dotenv==1.0.0

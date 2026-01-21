@@ -4,7 +4,7 @@ from src.utils.download_image import download_image_from_url
 from src.logging import datalake
 import base64
 from pydantic import BaseModel, Field
-from src.clients.upstash import ratelimit
+from src.clients.ratelimit import ratelimit
 from datetime import datetime
 from src.models.image_data import ImageDataRequest
 
@@ -49,7 +49,7 @@ async def parse_receipt_from_image(
     request: ImageDataRequest,
     background_tasks: BackgroundTasks,
 ) -> Receipt:
-    ratelimit("/image/extract/receipt", 60, 3600)
+    ratelimit("/image/extract/receipt")  # Default: 100 requests per hour
 
     if request.image.startswith("http"):
         request.image = base64.b64encode(download_image_from_url(request.image)).decode(
