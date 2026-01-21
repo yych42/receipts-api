@@ -42,3 +42,6 @@ Thumbs.db
 
 # Fly.io
 fly.toml.bak
+
+# Test output
+test/actual_receipt.json

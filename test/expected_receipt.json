@@ -1,0 +1,46 @@
+{
+  "merchant": "KURO RAMEN",
+  "items": [
+    {
+      "name": "House Salad",
+      "unit_price": 7.95,
+      "unit_label": "each",
+      "quantity": 1,
+      "total_price": 7.95,
+      "category": "appetizer",
+      "discount": null
+    },
+    {
+      "name": "Deep Fried Soft Shell Crab",
+      "unit_price": 15.0,
+      "unit_label": "each",
+      "quantity": 1,
+      "total_price": 15.0,
+      "category": "appetizer",
+      "discount": null
+    },
+    {
+      "name": "Kuro Ramen",
+      "unit_price": 16.0,
+      "unit_label": "each",
+      "quantity": 1,
+      "total_price": 16.0,
+      "category": "main",
+      "discount": null
+    },
+    {
+      "name": "Chicken Katsu Curry",
+      "unit_price": 18.0,
+      "unit_label": "each",
+      "quantity": 1,
+      "total_price": 18.0,
+      "category": "main",
+      "discount": null
+    }
+  ],
+  "total": 76.38,
+  "date": "2024-09-28",
+  "time": "12:44",
+  "currency": "USD",
+  "tax": 6.7
+}
